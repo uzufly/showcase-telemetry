@@ -1,16 +1,10 @@
-# Uzufly ‹repository name›
+# ‹Terrain & imagery layers› showcase
 
-‹Repository description›.
+Showcase of our [‹Terrain, imagery and feature layers› project](https://www.notion.so/uzufly/Uzuverse-Terrain-imagery-and-feature-layers-801ec5995dbb45acb8bead45a299ec2a?pvs=4).
 
 ## Status
 
-🚧 Alpha. Work-in-progress.
-
-## Components
-
-|Component|Description|
-|---|---|
-|[`‹TODO›`](TODO)|Description of the `‹TODO›` component|
+👾 Design stage. Work-in-progress.
 
 ## License
 
