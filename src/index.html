@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Terrain and Imagery layers – experiences with our geo names/places ontology
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <web-vitals></web-vitals>
+    <header>
+      <img src="assets/img/01uzufly_logo_sigle.png?as=webp&height=24" />
+      <strong>Terrain &amp; Imagery layers</strong>&nbsp;– experiences
+      with our geo names/places ontology
+    </header>
+    <nav>
+      <a href="index.html" class="current-page">Home</a>
+    </nav>
+    <main>
+      <app-shell></app-shell>
+    </main>
+    <script type="module">
+      import { ContextRoot } from "@lit-labs/context";
+      import "./components/app-shell.js";
+      import "web-vitals-element/dist/web-vitals-element.styled.min.js";
+
+      // In case we would have context providing elements that are upgraded
+      // late, LightDOM content below those providers may end up requesting
+      // a context that is currently not provided by any provider. To solve
+      // this case, a context root will intercept and track unsatisfied
+      // context-request events and then redispatch these requests when
+      // providers are updated.
+      const root = new ContextRoot();
+      root.attach(document.body);
+    </script>
+  </body>
+</html>

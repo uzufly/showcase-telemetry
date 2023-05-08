@@ -6,6 +6,18 @@ Showcase of our [‹Terrain, imagery and feature layers› project](https://www.
 
 👾 Design stage. Work-in-progress.
 
+## Installation
+
+```shell
+$ npm install
+```
+
+## Usage
+
+```shell
+$ npm start
+```
+
 ## License
 
 Distributed under the Apache-2.0 license. See LICENSE for details.
