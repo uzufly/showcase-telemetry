@@ -23,7 +23,7 @@
     "clean:del": "npx del --force dist .parcel-cache",
     "clean:mkdirs": "npx make-dir dist",
     "format": "prettier \"src/**/*.{js,html,css}\" --write",
-    "lint": "eslint . --ext .js",
+    "lint": "eslint ./src --ext .js",
     "start": "parcel src/index.html --open",
     "build": "parcel build --public-url ./",
     "prebuild": "concurrently -g npm:clean:* npm:lint",
