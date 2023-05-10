@@ -24,7 +24,7 @@
     "clean:mkdirs": "npx make-dir dist",
     "format": "prettier \"src/**/*.{js,html,css}\" --write",
     "lint": "eslint ./src --ext .js",
-    "start": "parcel src/index.html --open",
+    "start": "parcel src/index.html",
     "build": "parcel build --public-url ./",
     "prebuild": "concurrently -g npm:clean:* npm:lint",
     "test": "echo \"Error: no test specified\" && exit 1",
