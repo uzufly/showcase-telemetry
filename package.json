@@ -2,6 +2,7 @@
   "name": "@uzufly/showcase-imagery-layers",
   "version": "1.0.0",
   "description": "Terrain and Imagery layers – experiences with our geo names/places ontology",
+  "type": "module",
   "source": "src/index.html",
   "author": "Olivier Lange",
   "license": "Apache-2.0",
@@ -39,6 +40,7 @@
   },
   "homepage": "https://github.com/uzufly/showcase-imagery-layers#readme",
   "devDependencies": {
+    "@vercel/node": "^2.14.2",
     "concurrently": "^8.0.1",
     "del-cli": "^5.0.0",
     "eslint": "^8.36.0",
@@ -47,10 +49,12 @@
     "make-dir-cli": "^3.0.0",
     "parcel": "latest",
     "prettier": "^2.8.6",
-    "sharp": "^0.31.3"
+    "sharp": "^0.31.1"
   },
   "dependencies": {
     "@lit-labs/context": "^0.3.0",
+    "@opentelemetry/api": "^1.4.1",
+    "@vercel/otel": "^0.3.0",
     "lit": "^2.7.2",
     "web-vitals-element": "^1.3.7"
   }
