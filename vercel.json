@@ -3,6 +3,9 @@
   "functions": {
     "api/readfile.js": {
       "includeFiles": "api/files/**"
+    },
+    "api/get-user.js": {
+      "includeFiles": "OTEL-initializer.js"
     }
   }
 }
