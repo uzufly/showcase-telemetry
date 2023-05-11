@@ -1,4 +1,4 @@
-import { tracer, context } from '../OTEL-initializer.js';
+import { tracer, context } from './_OTEL-initializer.js';
 
 export default async function handler(_request, response) {
   const span = tracer.startSpan('handler', undefined, context.active());
