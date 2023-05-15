@@ -1,12 +1,17 @@
 receivers:
     otlp:
         protocols:
-            grpc: null
-            http: null
+            grpc:
+            http:
+              cors:
+                allowed_origins:
+                - http://localhost:1234
 processors:
     batch:
         timeout: 100ms
 exporters:
+    logging:
+        loglevel: debug
     otlp/1:
         endpoint: tracetest:4317
         tls:
@@ -19,4 +24,5 @@ service:
             processors:
                 - batch
             exporters:
+                - logging
                 - otlp/1

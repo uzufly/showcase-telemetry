@@ -1,10 +1,14 @@
-# ‹Terrain & imagery layers› showcase
+# ‹Tracetest› and manual browser instrumentation showcase
 
-Showcase of our [‹Terrain, imagery and feature layers› project](https://www.notion.so/uzufly/Uzuverse-Terrain-imagery-and-feature-layers-801ec5995dbb45acb8bead45a299ec2a?pvs=4).
+Showcase of a ‹no-op› web app, instrumented with [OpenTelemetry](https://opentelemetry.io/docs/instrumentation/js/getting-started/browser/) for testing with [tracetest](https://docs.tracetest.io/concepts/what-is-trace-based-testing).
 
 ## Status
 
 👾 Design stage. Work-in-progress.
+
+## Prerequisites
+
+* [Docker Desktop](https://www.docker.com/get-started/)
 
 ## Installation
 
