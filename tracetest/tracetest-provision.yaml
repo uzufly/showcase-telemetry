@@ -1,10 +1,12 @@
 ---
 type: DataStore
 spec:
-  name: otlp
-  type: otlp
-  otlp:
-    type: otlp
+  name: jaeger
+  type: jaeger
+  jaeger:
+    endpoint: jaeger:16685
+    tls:
+      insecure: true
 ---
 type: Config
 spec:
