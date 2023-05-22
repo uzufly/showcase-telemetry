@@ -1,28 +1,28 @@
 receivers:
-    otlp:
-        protocols:
-            grpc:
-            http:
-              cors:
-                allowed_origins:
-                - http://localhost:1234
+  otlp:
+    protocols:
+      grpc:
+      http:
+        cors:
+          allowed_origins:
+            - http://localhost:1234
 processors:
-    batch:
-        timeout: 100ms
+  batch:
+    timeout: 100ms
 exporters:
-    logging:
-        loglevel: debug
-    otlp/1:
-        endpoint: tracetest:4317
-        tls:
-            insecure: true
+  logging:
+    loglevel: debug
+  jaeger:
+    endpoint: jaeger:14250
+    tls:
+      insecure: true
 service:
-    pipelines:
-        traces/1:
-            receivers:
-                - otlp
-            processors:
-                - batch
-            exporters:
-                - logging
-                - otlp/1
+  pipelines:
+    traces/1:
+      receivers:
+        - otlp
+      processors:
+        - batch
+      exporters:
+        - logging
+        - jaeger
