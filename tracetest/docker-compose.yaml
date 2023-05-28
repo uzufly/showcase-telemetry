@@ -13,6 +13,10 @@ services:
               target: 4318
               published: 4318
               protocol: tcp
+            - mode: ingress
+              target: 4317
+              published: 4317
+              protocol: tcp
         volumes:
             - type: bind
               source: ./collector.config.yaml
