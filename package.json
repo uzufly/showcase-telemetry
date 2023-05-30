@@ -28,7 +28,10 @@
     "dev": "parcel src/index.html",
     "build": "parcel build --public-url ./",
     "prebuild": "concurrently -g npm:clean:* npm:lint",
-    "test:ui:start": "TRACETEST_DEV=true docker compose -f tracetest/docker-compose.yaml up -d",
+    "test:docker:up": "TRACETEST_DEV=true docker compose -f tracetest/docker-compose.yaml up -d",
+    "test:docker:down": "docker compose -f tracetest/docker-compose.yaml down",
+    "otel:docker:up": "docker compose -f vercel/docker-compose.yaml up -d",
+    "otel:docker:down": "docker compose -f vercel/docker-compose.yaml down",
     "prepublishOnly": "npm run build"
   },
   "repository": {
